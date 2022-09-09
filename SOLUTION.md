@@ -43,7 +43,11 @@ Improvements:
 
 - Introducing typescript in order to improve the developer experience and performance as well as preventing unintentional bugs and potentially easing out from too many test.
 - Build component library by using a tool like Storybook, in order to improve the developer experience and performance, keeping consistancy, as well as avoiding bugs in a long run due to having one source of truth.
-- Look into moving pagination into separate component (yet if Storybook component is implemented, then we might have a table component already implemented with pagination, but still they would be broken down into their own molucles in the end.)
-- Add more filters and look into redesigning it for better UX
+- Look into moving pagination into separate component (yet if Storybook is implemented, then we might have a table component already implemented with pagination, but still they would be broken down into their own molucles in the end.)
+- Add more filters and look into redesigning it for better UX (might need to rewrite the useEffect that triggeres the api call once more filters are added)
 - Fix the empty page in pagination
 - Improve overall UI for mobile and desktop
+- Add individual page for product
+- Add SEO fo all pages
+
+Thank you
