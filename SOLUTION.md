@@ -22,7 +22,7 @@ Apart from a state store I will require two more components:
 WHEN I run test 1
 THEN I expect the API call to http://localhost:3010/products to be mocked and fake data to be returned
 THEN I expect the tests to check that the 12 products have been rendered
-THEN I expect an element with test_id pagination-next_test-id to have styles set to text-gray-800 hover:bg-gray-300 (as there are more that 12 products) in the db
+THEN I expect an element with test_id pagination-next_test-id to have color style set to #1e293b (as there are more that 12 products in the db)
 
 WHEN I run test 2
 THEN I expect for an api call to be triggered when an element with test_id subscription-checkbox_test-id is set to true state
@@ -46,13 +46,16 @@ Edge cases:
 
 Improvements:
 
-- Introducing typescript in order to improve the developer experience and performance as well as preventing unintentional bugs and potentially easing out from too many test.
+- Introducing typescript in order to improve the developer experience and performance as well as preventing unintentional bugs and potentially easing out from too many tests.
+- Add real tests
 - Build component library by using a tool like Storybook, in order to improve the developer experience and performance, keeping consistancy, as well as avoiding bugs in a long run due to having one source of truth.
-- Look into moving pagination into separate component (yet if Storybook is implemented, then we might have a table component already implemented with pagination, but still they would be broken down into their own molucles in the end.)
+- Look into moving pagination into a separate component (yet if Storybook is implemented, then we might have a table component already implemented with pagination, but still they would be broken down into their own molucles in the end.)
 - Add more filters and look into redesigning it for better UX (might need to rewrite the useEffect that triggeres the api call once more filters are added)
 - Fix the empty page in pagination
 - Improve overall UI for mobile and desktop
 - Add individual page for product
 - Add SEO fo all pages
+
+In order to complete the above inprovements it would require additional 14-16h
 
 Thank you
