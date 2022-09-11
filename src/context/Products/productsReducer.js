@@ -8,7 +8,7 @@ const productsReducer = (state, action) => {
                 [key]: payload
             }
         default:
-            throw new Error(`No action fount for: ${type}`)
+            throw new Error(`No action found for: ${type}`)
     }
 } 
 

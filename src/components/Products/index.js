@@ -28,13 +28,13 @@ const Products = () => {
                     </div>
                 ) :
                 (
-                    <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {data.length == 0 && <p>No products to display</p>}
                         {
                             data?.map((items, key) => (
-                                <div className="w-full mx-auto mt-4 shadow-md border rounded-md duration-300 hover:shadow-sm cursor-pointer" key={key}>
-                                    <a href={items.href}>
-                                        <img src={items.image_src} alt={items.title}  className="w-full h-48 rounded-t-md" />
+                                <div className="md:w-54 lg:w-64 mx-auto mt-4 shadow-md border rounded-md duration-300 hover:shadow-sm cursor-pointer" key={key}>
+                                    <a href="">
+                                        <img src={items.image_src} alt={items.title}  className="rounded-t-md p-4" />
 
                                         <div className="pt-3 ml-4 mr-2 mb-3">
                                             <h3 className="text-xl text-gray-900">

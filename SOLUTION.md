@@ -38,20 +38,15 @@ THEN I expect for the following text to be on the screen "No products to display
 
 ```
 
-## Identifed edge cases after development + how I can build a better product
-
-Edge cases:
-
-- The API doesn't return the total number or items at the moment, therefore it made it a bit tricky to calculate whether there is a next page in the API. Due to this I have an empty page if the API returns the last 12 products (as I am requesting 12 per page and checking if 12 are returned then I assume there could be more on the back end). However, this is more of a limitation of my implementation and a workaround for this could be implemented.
+## Next steps in order to improve the product
 
 Improvements:
 
-- Introducing typescript in order to improve the developer experience and performance as well as preventing unintentional bugs and potentially easing out from too many tests.
-- Add real tests
+- Introducing typescript in order to improve the developer experience and performance as well as preventing unintentional bugs.
+- Add real tests.
 - Build component library by using a tool like Storybook, in order to improve the developer experience and performance, keeping consistancy, as well as avoiding bugs in a long run due to having one source of truth.
 - Look into moving pagination into a separate component (yet if Storybook is implemented, then we might have a table component already implemented with pagination, but still they would be broken down into their own molucles in the end.)
 - Add more filters and look into redesigning it for better UX (might need to rewrite the useEffect that triggeres the api call once more filters are added)
-- Fix the empty page in pagination
 - Improve overall UI for mobile and desktop
 - Add individual page for product
 - Add SEO fo all pages

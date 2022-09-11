@@ -3,7 +3,7 @@ import useProducts from "../../context/Products/ProductsContext"
 
 const Filters = () => {
     const {
-        data,
+        totalCount,
         searchQuery,
         setSearchQuery,
         isSubscription,
@@ -13,7 +13,7 @@ const Filters = () => {
     } = useProducts()
     return (
         <div className="border-b md:border-b-0 md:border-r border-grey-200 pr-8 pb-8">
-            <h2 className="text-lg font-medium text-gray-700 mb-6">Filter {data?.length} items:</h2>
+            <h2 className="text-lg font-medium text-gray-700 mb-6">Filter {totalCount} items:</h2>
 
             <div className="relative mb-6">
                     <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
