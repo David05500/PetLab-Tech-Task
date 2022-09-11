@@ -31,6 +31,11 @@ THEN I expect for an api call to be triggered when value of the element with tes
 
 WHEN I run test 3
 THEN I expect for an api call to be triggered when an element with test_id pagination-next_test-id is pressed
+
+WHEN I run test 4
+THEN I expect the API call to http://localhost:3010/products to be mocked and fake data to be returned as an empty array
+THEN I expect for the following text to be on the screen "No products to display"
+
 ```
 
 ## Identifed edge cases after development + how I can build a better product
