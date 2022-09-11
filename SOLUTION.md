@@ -4,7 +4,7 @@
 
 Estimated: 5 hours
 
-Spent: 6 hours
+Spent: >5 hours
 
 ## Solution
 
