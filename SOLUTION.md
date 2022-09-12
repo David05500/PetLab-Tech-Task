@@ -4,7 +4,7 @@
 
 Estimated: 5 hours
 
-Spent: ~5 hours
+Spent: ~5 hours (dev time was just under 3h and around 2h I spent on researching how to pass regex and if its possible to pass it in the url query )
 
 ## Solution
 
